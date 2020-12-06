@@ -1,0 +1,54 @@
+body {
+font-family:verdana;
+font-size:15px;
+}
+
+.close {
+	
+	position:relative;
+	left: 220px;
+  top: 120px;
+  color:white;
+	
+}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+
+#boxes .window {
+  position:fixed;
+  left:0;
+  top:0;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+#dialog {
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:  rgba(5, 22, 13, 0.9);
+}
+
+#dialogDos{
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:  rgba(5, 22, 13, 0.9);
+}
+
+#dialogTres{
+  width:375px; 
+  height:203px;
+  padding:10px;
+  background-color:  rgba(5, 22, 13, 0.9);
+}

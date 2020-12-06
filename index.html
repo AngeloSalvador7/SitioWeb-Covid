@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name= "viewport" conten="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>SALUD AL 100 | Home</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="imagen/png" href="img/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Petrona&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/nivo-slider.css"/>
+        <link rel="stylesheet" href="css/default.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.nivo.slider.js"></script> 
+        
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+        </script>
+
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="contenedorHeader">
+
+        <div class="contenedorHeaderParte1">
+
+          <div class="claseImagenLogo">
+            <img id="imagenLogo" src="img/logo.png" alt="Foto del logo" />
+          </div>
+
+          <div class="tituloEmpresa">
+            <h1 id="tituloEmpresa1">Salud al 100 ™</h1>
+          </div>
+
+          <div class="claseBarraBuscador">
+            <input type="text" id="barraBuscador" placeholder="Buscador de informacion" />
+          </div>
+
+          <div class="claseBotonBuscador">
+            <button type="button" id="botonBuscador">Buscar</button>
+          </div>
+
+        </div>
+
+        <nav class="nav">
+          <h4 id="paginaActual"><a href="index.html">HOME</a></h4>
+          <h4><a href="enfermedades.html">ENFERMEDADES</a></h4>
+          <h4><a href="vacunas.html">VACUNACIÓN</a></h4>
+          <h4><a href="mapaHospitales.html">HOSPITALES</a></h4>
+          <h4><a href="contacto.html">CONTACTO</a></h4>
+        </nav>
+
+      </div>
+    </header>
+
+    <div class="carrusel">
+
+      <div id="contenedorSlider" >
+          <article class="slider-wrapper theme-default">
+
+            <div id="slider" class="nivoSlider">
+
+            <a href="coronavirus.html"><img id="imagenSlider" src="img/slider2.jpg" alt="Foto de slider"/></a>
+            <a href="coronavirus.html"><img id="imagenSlider" src="img/slider3.jpg" alt="Foto de slider"/></a>
+            <a href="coronavirus.html"><img id="imagenSlider" src="img/slider4.jpg" alt="Foto de slider"/></a>
+
+            </div>
+          </article>
+          
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="contenedorMain">
+
+        <h2 id="tituloMain">Bienvenido a Salud al 100 Corporation™</h2>
+        <a href="enfermedades.html" id="imagenEnfermedad"><img class="imagenDelMain" src="img/imagenEnfermedad.jpg" alt="Foto de enfermedades" /></a>
+        <h3 id="tituloEnfermedades"> <a href="enfermedades.html" class="tituloDelMain">Enfermedades</a> </h3>
+        <a href="vacunas.html" id="imagenVacuna"><img class="imagenDelMain" src="img/imagenVacuna.jpg" alt="Foto de vacunas" /></a>
+        <h3 id="tituloVacuna"> <a href="vacunas.html" class="tituloDelMain">Vacunación</a> </h3>
+        <a href="mapaHospitales.html" id="imagenMapa"><img    class="imagenDelMain" src="img/imagenMapa.jpg" alt="Foto de mapa de hospitales" /></a>
+        <h3 id="tituloMapa"><a href="mapaHospitales.html" class="tituloDelMain">Hospitales</a></h3>
+
+      </div>
+    </main>
+
+    <div class="apartadoNumeroEmergencia">
+      <div class="contenedorApartadoNumeroEmergencia">
+
+        <p id="parrafo1Emer">Si tenés síntomas de COVID-19 <br /><br /><span id="textoGrande">LLAMA AL</span></p>
+        <img id="imagenTelefono" src="img/telefono.png" />
+        <p id="num148">148</p>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="contenedorFooter">
+
+        <article class="articleDelFooter1">
+          <dl>Alumno
+            <dt><br />Ordoñez, Angelo.</dt>
+          </dl>
+        </article>
+
+        <article class="articleDelFooter2">
+          <dl>Menu inferior
+            <dt><br /><a href="enfermedades.html">Enfermedades</a></dt>
+            <dt><a href="vacunas.html">Vacunas.</a></dt>
+            <dt><a href="mapaHospitales.html">Hospitales.</a></dt>
+            <dt><a href="contacto.html">Contacto.</a></dt>
+          </dl>
+        </article>
+
+        <article class="articleDelFooter3">
+          <dl>Redes sociales
+            <dt><br /><a href="https://www.instagram.com/unlamoficial/" target="_blank">Instagram.</a></dt>
+            <dt><a href="https://www.facebook.com/UnlamOficial" target="_blank">Facebook.</a></dt>
+            <dt><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=UnlamOficial" target="_blank">Twitter.</a></dt>
+          </dl>
+        </article>
+
+      </div>
+    </footer>
+
+  </body>
+  
+</html>

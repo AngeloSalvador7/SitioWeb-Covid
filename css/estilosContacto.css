@@ -1,0 +1,225 @@
+  * {
+  font-family: "Petrona", serif;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+/* COMIENZA el header */
+.header {
+  background: rgba(5, 22, 13, 0.9);
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  z-index: 999;
+}
+
+.contenedorHeader {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 90px 40px;
+}
+
+.contenedorHeaderParte1 {
+  grid-row: 1;
+
+  display: grid;
+  grid-template-columns: 10% 30% 30% 25% 5%;
+}
+
+.claseImagenLogo {
+  grid-column: 1;
+  grid-row: 1;
+  margin: auto;
+  margin-left: 0px;
+}
+
+.tituloEmpresa {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 30px;
+}
+
+#tituloEmpresa1 {
+  font-family: "Great Vibes", cursive;
+}
+
+.claseBarraBuscador {
+  grid-column: 4;
+  grid-row: 1;
+  margin-top: 30px;
+}
+
+.claseBotonBuscador {
+  grid-column: 5;
+  grid-row: 1;
+  margin-top: 30px;
+}
+
+#imagenLogo {
+  width: 65px;
+  height: 65px;
+}
+
+#barraBuscador {
+  width: 100%;
+  height: 27px;
+  color: black;
+}
+
+#botonBuscador {
+  height: 31px;
+  width: 60px;
+  color: black;
+}
+
+.nav {
+  grid-row: 2;
+
+  display: grid;
+  grid-template-columns: 11% 17% 14% 51% 7%;
+  grid-template-rows: 100%;
+  text-align: left;
+  margin-top: 10px;
+}
+
+#paginaActual {
+  text-decoration-line: underline;
+}
+
+/*COMIENZA el main*/
+
+.main {
+  background: url("../img/fondoRuido.png");
+  padding-top: 130px;
+}
+
+.contenedorMain {
+  max-width: 1150px;
+  margin: auto;
+  height: 900px;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 60%;
+}
+
+.formularioContacto {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 1;
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+#tituloContacto {
+  grid-row: 1;
+  margin-top: 10px;
+  color: black;
+}
+
+#formularioFisico {
+  grid-row: 2;
+}
+
+.barrasFormulario {
+  width: 70%;
+  height: 7%;
+  color: black;
+}
+
+#consulta {
+  height: 20%;
+}
+
+#caracteresRestantes{
+  color: black;
+}
+
+#boton {
+  margin-left: 62%;
+  color: black;
+}
+
+.infoContacto {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 1;
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+#tituloInfoContacto {
+  grid-row: 1;
+  margin-left: 10%;
+  margin-top: 10px;
+  color: black;
+}
+
+#listaMediosContacto {
+  grid-row: 2;
+  margin-left: 10%;
+  color: black;
+}
+
+.itemListaMediosContacto {
+  color: black;
+}
+
+.infoUbicacion {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+
+  display: grid;
+  grid-template-rows: 5% 95%;
+  color: black;
+}
+
+#tituloUbicacion {
+  grid-row: 1;
+  color: black;
+}
+
+#mapaUbicacion {
+  grid-row: 2;
+  margin: 30px auto 0px auto;
+  width: 100%;
+  height: 80%;
+}
+
+/* COMIENZA el footer */
+.footer {
+  background: hsl(0, 0%, 0%);
+}
+
+.contenedorFooter {
+  max-width: 1150px;
+  height: 110px;
+  margin: auto;
+  font-size: 12px;
+
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+.articleDelFooter1 {
+  margin-top: 9px;
+}
+
+.articleDelFooter2 {
+  margin-top: 9px;
+  text-align: center;
+}
+
+.articleDelFooter3 {
+  margin-top: 9px;
+  text-align: right;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>SALUD AL 100 | Contacto</title>
+    <link href="css/estilosContacto.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="imagen/png" href="img/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Petrona&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="js/contacto.js"></script>
+
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="contenedorHeader">
+
+        <div class="contenedorHeaderParte1">
+
+          <div class="claseImagenLogo">
+            <img id="imagenLogo" src="img/logo.png" alt="Foto del logo" />
+          </div>
+
+          <div class="tituloEmpresa">
+            <h1 id="tituloEmpresa1">Salud al 100 ™</h1>
+          </div>
+
+          <div class="claseBarraBuscador">
+            <input type="text" id="barraBuscador" placeholder="Buscador de informacion" />
+          </div>
+
+          <div class="claseBotonBuscador">
+            <button type="button" id="botonBuscador">Buscar</button>
+          </div>
+
+        </div>
+
+        <nav class="nav">
+          <h4><a href="index.html">HOME</a></h4>
+          <h4><a href="enfermedades.html">ENFERMEDADES</a></h4>
+          <h4><a href="vacunas.html">VACUNACIÓN</a></h4>
+          <h4><a href="mapaHospitales.html">HOSPITALES</a></h4>
+          <h4 id="paginaActual"><a href="contacto.html">CONTACTO</a></h4>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="contenedorMain">
+
+        <div class="formularioContacto">
+
+          <h2 id="tituloContacto">Contacto</h2>
+          <form id="formularioFisico" action="" method="get" onsubmit="return validar()" >
+            <input type="text" placeholder="Ingrese su nombre." class="barrasFormulario" id="nombre" name="name" /><br /><br />
+            <input type="email" placeholder="Ingrese su email." class="barrasFormulario" id="email" name="email"  /><br /><br />
+            <input type="tel" placeholder="Ingrese su telefono." class="barrasFormulario" id="telf" name="telf" /><br /><br />
+            <textarea placeholder="Ingrese una consulta en caso de tenerla." class="barrasFormulario" id="consulta" name="consulta" onkeydown="textarea();"></textarea><br /><br />
+            <p id="caracteresRestantes">1000 caracteres restantes</p>
+            <input type="submit" id="boton" value="Enviar" action="" />
+          </form>
+
+        </div>
+
+        <div class="infoContacto">
+
+          <h2 id="tituloInfoContacto">Datos de contacto</h2>
+          <dl id="listaMediosContacto">
+            <dt class="itemListaMediosContacto">Dirección: Florencio Varela 1903, B1754 San Justo</dt>
+            <dt class="itemListaMediosContacto">Telefonos: 011 4480-8900</dt>
+            <dt class="itemListaMediosContacto">Celular: 011 4480-8900</dt>
+            <dt class="itemListaMediosContacto">Email: unlam@hotmail.edu.ar</dt>
+            <dt class="itemListaMediosContacto">Web: https://www.unlam.edu.ar/</dt>
+          </dl>
+        </div>
+
+        <div class="infoUbicacion">
+
+          <h2 id="tituloUbicacion">Ubicación</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6562.749429827783!2d-58.5669704!3d-34.6704911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1602647585323!5m2!1ses!2sar"
+            id="mapaUbicacion" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="contenedorFooter">
+
+        <article class="articleDelFooter1">
+          <dl>Alumno
+            <dt><br />Ordoñez, Angelo.</dt>
+          </dl>
+        </article>
+
+        <article class="articleDelFooter2">
+          <dl>Menu inferior
+            <dt><br /><a href="enfermedades.html">Enfermedades</a></dt>
+            <dt><a href="vacunas.html">Vacunas.</a></dt>
+            <dt><a href="mapaHospitales.html">Hospitales.</a></dt>
+            <dt><a href="contacto.html">Contacto.</a></dt>
+          </dl>
+        </article>
+
+        <article class="articleDelFooter3">
+          <dl>Redes sociales
+            <dt><br /><a href="https://www.instagram.com/unlamoficial/" target="_blank">Instagram.</a></dt>
+            <dt><a href="https://www.facebook.com/UnlamOficial" target="_blank">Facebook.</a></dt>
+            <dt><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=UnlamOficial" target="_blank">Twitter.</a></dt>
+          </dl>
+        </article>
+
+      </div>
+    </footer>
+
+  </body>
+  
+</html>

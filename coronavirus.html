@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>SALUD AL 100 | Covid-19</title>
+    <link href="css/estilosCoronavirus.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="imagen/png" href="img/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Petrona&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <script src="js/coronavirus.js"></script>
+
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="contenedorHeader">
+
+        <div class="contenedorHeaderParte1">
+
+          <div class="claseImagenLogo">
+            <img id="imagenLogo" src="img/logo.png" alt="Foto del logo" />
+          </div>
+
+          <div class="tituloEmpresa">
+            <h1 id="tituloEmpresa1">Salud al 100 ™</h1>
+          </div>
+
+          <div class="claseBarraBuscador">
+            <input type="text" id="barraBuscador" placeholder="Buscador de informacion" />
+          </div>
+
+          <div class="claseBotonBuscador">
+            <button type="button" id="botonBuscador">Buscar</button>
+          </div>
+
+        </div>
+
+        <nav class="nav">
+          <h4><a href="index.html">HOME</a></h4>
+          <h4><a href="enfermedades.html">ENFERMEDADES</a></h4>
+          <h4><a href="vacunas.html">VACUNACIÓN</a></h4>
+          <h4><a href="mapaHospitales.html">HOSPITALES</a></h4>
+          <h4><a href="contacto.html">CONTACTO</a></h4>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="contenedorMain">
+
+        <section class="infoEnfermedad">
+
+          <h1 id="tituloInfoEnfermedad">Coronavirus (Covid-19)</h1>
+
+          <img class="imagenInfoEnfermedad" src="img/covid19.jpg" alt="Foto covid19" />
+          <p id="parrafoInfoEnfermedad">
+            La enfermedad por coronavirus (COVID 19) es una ‎enfermedad
+            infecciosa causada por un ‎coronavirus recientemente descubierto. ‎
+            La mayoría de las personas que enferman de ‎COVID 19 experimentan
+            síntomas de leves a ‎moderados y se recuperan sin tratamiento
+            ‎especial. El 31 de diciembre de 2019, la Organización Mundial de la
+            Salud (OMS) recibió reportes de presencia de neumonía, de origen
+            desconocido, en la ciudad de Wuhan, en China. Rápidamente, a
+            principios de enero, las autoridades de este país identificaron la
+            causa como una nueva cepa de coronavirus. La enfermedad ha ido
+            expandiéndose hacia otros continentes como Asia, Europa y América.
+            Según información de la OMS, el coronavirus se transmite por
+            contacto de persona a persona con algún infectado (incluso si no
+            presenta síntomas). Por ello, la mejor manera de evitar contraer
+            este virus es siguiendo las buenas prácticas de higiene.
+          </p>
+
+        </section>
+
+        <div id="primerSeparador"></div>
+
+        <section class="formularioGeneral">
+
+          <h2 id="tituloFormulario"> Formulario de detención (Test) de Coronavirus (Covid-19) </h2>
+
+          <div class="formularioParte1">
+            <p id="parrafo1Formulario">
+              Hola usuario! Si tenés síntomas de COVID-19 o has estado en
+              contacto con una persona afectada deberias hacer un control y
+              seguimiento diario de tus síntomas.
+            </p>
+
+            <p id="parrafo2Formulario">
+              Esta aplicación te permitirá hacer un seguimiento de la evolución
+              de los síntomas y te dará las indicaciones y consejos a seguir en
+              cada caso. El uso de este servicio supone la aceptación de los
+              términos y la politica de privacidad descritos en las condiciones
+              y politicas.
+            </p>
+
+            <h3 id="tituloSintomas">Sintomas</h3>
+
+            <img class="imagenDelFormulario" id="imgF1" src="img/24-fiebre-dolor-garganta.png" alt="Foto fiebre y dolor de garganta" />
+            <img class="imagenDelFormulario" id="imgF2" src="img/25-fiebre-dificultad-respirar.png" alt="Foto fiebre y dificultad respirar" />
+            <img class="imagenDelFormulario" id="imgF3" src="img/23-fiebre-tos.png" alt="Foto fiebre y tos" />
+          </div>
+
+          <form class="formularioParte2" onsubmit="return validar()">
+            
+            <label for="nombre" id="labelNombre">Nombre</label>
+            <input type="text" class="bordeFormulario1" name="nombre" id="nombre" />
+
+            <label for="documento" id="labelDocumento">DNI</label>
+            <input type="number" class="bordeFormulario" name="documento" id="documento" />
+
+            <label for="telefono" id="labelTelefono">Teléfono</label>
+            <input type="number" class="bordeFormulario" name="telefono" id="telefono" />
+
+            <label for="ciudad" id="labelCiudad">Ciudad</label>
+            <input type="text" class="bordeFormulario" name="ciudad" id="ciudad" />
+
+            <label for="genero" id="labelGenero">Género</label>
+            <input type="radio" name="genero" value="1" id="masculino" /><p id="palabraMasculino">M</p>
+            <input type="radio" name="genero" value="2" id="femenino" /><p id="palabraFemenino">F</p>
+
+            <label for="viajeExterior" id="labelViajeExterior">¿Has viajado fuera de Argentina?</label>
+            <input type="radio" name="viajeExterior" value="Mostrar" id="siViajo" onclick="mostrar()" /><p id="palabraSiViajo">Si</p>
+            <input type="radio" name="viajeExterior" value="Ocultar" id="noViajo" onclick="ocultar()" /><p id="palabraNoViajo">No</p>
+
+            <label for="opcionesPaises" id="labelPaisesVisitados">Países visitados  </label>
+            <select class="bordeFormulario" name="opcionesPaises" id="opcionesPaises">
+              <option>Argentina</option>
+              <option>Bolivia</option>
+              <option>Colombia</option>
+              <option>Ecuador</option>
+              <option>España</option>
+              <option>Usa</option>
+              <option>Peru</option>
+              <option>Venezuela</option>
+            </select>
+
+            <p id="parrafoIndicarSintomas"> Por favor indica los síntomas que presentas:</p>
+
+            <label for="opciones1" id="labelOpciones1">¿Tuviste fiebre mayor a 38 grados?</label>
+            <input type="radio" name="opciones1" value="1" id="opciones1Si" /><p id="palabraSiFiebre">Si</p>
+            <input type="radio" name="opciones1" value="2" id="opciones1No" /><p id="palabraNoFiebre">No</p>
+
+            <label for="opciones2" id="labelOpciones2">¿Tuviste dolor de cabeza?</label>
+            <input type="radio" name="opciones2" value="1" id="opciones2Si" /><p id="palabraSiCabeza">Si</p>
+            <input type="radio" name="opciones2" value="2" id="opciones2No" /><p id="palabraNoCabeza">No</p>
+
+            <label for="opciones3" id="labelOpciones3">¿Tuviste una tos persistente?</label>
+            <input type="radio" name="opciones3" value="1" id="opciones3Si" /><p id="palabraSiTos">Si</p>
+            <input type="radio" name="opciones3" value="2" id="opciones3No" /><p id="palabraNoTos">No</p>
+
+            <label for="opciones4" id="labelOpciones4">¿Tuviste dolor de garganta?</label>
+            <input type="radio" name="opciones4" value="1" id="opciones4Si" /><p id="palabraSiGarganta">Si</p>
+            <input type="radio" name="opciones4" value="2" id="opciones4No" /><p id="palabraNoGarganta">No</p>
+
+            <label for="opciones5" id="labelOpciones5">¿Tuviste dificultad para respirar?</label>
+            <input type="radio" name="opciones5" value="1" id="opciones5Si" onclick="mostrar1()"/><p id="palabraSiRespira">Si</p>
+            <input type="radio" name="opciones5" value="2" id="opciones5No" onclick="ocultar2()"/><p id="palabraNoRespira">No</p>
+
+            <label for="direccion" id="labelDireccion">Dirección</label>
+            <input type="text" class="bordeFormulario" name="direccion" id="direccion" />
+
+            <label for="correo" id="labelCorreo">Correo</label>
+            <input type="text" class="bordeFormulario" name="correo" id="correo" />
+
+            <input type="submit" class="botonFormulario" value="Enviar Test" />
+          </form>
+
+        </section>
+
+        <div id="segundoSeparador"></div>
+
+        <section class="medidasPrecaucion">
+
+          <h2 id="tituloMedidasPrecaucion">Medidas de precaución</h2>
+          <img class="imagenDePrecaucion" id="img1" src="img/LavarseManos.png" alt="Foto de lavarse las manos." />
+          <img class="imagenDePrecaucion" id="img2" src="img/NoTocarse.png" alt="Foto no tocar nariz." />
+          <img class="imagenDePrecaucion" id="img3" src="img/Estornudar.png" alt="Foto estornudar." />
+          <img class="imagenDePrecaucion" id="img4" src="img/Ventilar.png" alt="Foto ventilar." />
+          <img class="imagenDePrecaucion" id="img5" src="img/Limpieza.png" alt="Foto limpiar objetos." />
+          <img class="imagenDePrecaucion" id="img6" src="img/ReducirContacto.png" alt="Foto reducir contacto." />
+          <img class="imagenDePrecaucion" id="img7" src="img/NoSalir.png" alt="Foto no salir." />
+          <img class="imagenDePrecaucion" id="img8" src="img/NoCompartir.png" alt="Foto no compartir utiles personales." />
+
+        </section>
+
+        <div id="tercerSeparador"></div>
+
+        <section class="hospitalCercano">
+
+          <h2 id="tituloHospitalCercano"> Hospital mas cercano especializado en la enfermedad </h2>
+          <h3 id="nombreHospitalCercano"> Hospital Italiano de San Justo Agustín Rocca </h3>
+          <p id="telefonoHospital"> Tel: +541149590200 </p>
+          <p id="direccionHospital"> Dirección: Pres. Juan Domingo Perón 2231, B1702. </p>
+          <p id="ciudadHospital">Ciudad: Provincia de Buenos Aires</p>
+          <img class="imagenHospital" src="img/FotoHospital.jpg" alt=" Foto del hospital." />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5813.192703819984!2d-58.56612183982755!3d-34.66874926356095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7cd14129b61%3A0x78f6eab9f8572beb!2sHospital%20Italiano%20de%20San%20Justo%20Agust%C3%ADn%20Rocca!5e0!3m2!1ses-419!2sar!4v1602537441643!5m2!1ses-419!2sar"
+            id="mapaGoogle" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0">
+          </iframe>
+
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="contenedorFooter">
+
+        <article class="articleDelFooter1">
+          <dl>Alumno
+            <dt><br />Ordoñez, Angelo.</dt>
+          </dl>
+        </article>
+
+        <article class="articleDelFooter2">
+          <dl>Menu inferior
+            <dt><br /><a href="enfermedades.html">Enfermedades</a></dt>
+            <dt><a href="vacunas.html">Vacunas.</a></dt>
+            <dt><a href="mapaHospitales.html">Hospitales.</a></dt>
+            <dt><a href="contacto.html">Contacto.</a></dt>
+          </dl>
+        </article>
+
+        <article class="articleDelFooter3">
+          <dl>Redes sociales
+            <dt><br /><a href="https://www.instagram.com/unlamoficial/" target="_blank">Instagram.</a></dt>
+            <dt><a href="https://www.facebook.com/UnlamOficial" target="_blank">Facebook.</a></dt>
+            <dt><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=UnlamOficial" target="_blank" >Twitter.</a></dt>
+          </dl>
+        </article>
+
+      </div>
+    </footer>
+
+  </body>
+
+</html>
